@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge HTML Select Element</title>
+    <style>
+      body {
+        background-color: #d6d0b2;
+        font-family: "roboto", sans-serif;
+      }
+
+      h1 {
+        font-family: "roboto", sans-serif;
+        font-size: 20px;
+      }
+
+      .html-element {
+        background: white;
+        max-width: 600px;
+        margin: 45px auto;
+        box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+        border-radius: 16px;
+        padding: 30px;
+      }
+      select {
+        display: block;
+        padding: 5px 8px;
+        border-radius: 4px;
+        min-width: 200px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <form action="#">
+    <div class="html-element">
+      <h1>
+      Challenge - HTML Select Element
+    </h1>
+      <label for="fruits">1. What is your favorite fruit?</label>
+      <select name="" id="fruits">
+        <option value="">select a fruit</option>
+        <option value="strawberry">🍓 Strawberry</option>
+        <option value="apple">🍎 Apple</option>
+        <option value="Orange">🍊 Orange</option>
+        <option value="grape">🍇 Grape</option>
+        <option value="pineapple">🍍 Pineapple</option>
+        </select>
+        </form>
+      
+<p></p>
+<form action="#">
+      <label for="color">2. What is your favorite color?</label>
+      <select name="" id="color">
+        <option value="">choose a color</option>
+        <option value="❤️">Red</option>
+        <option value="💙">Blue</option>
+        <option value="💛">Yellow</option>
+        </select>
+        </form>
+      </div>
+      <script>
+        function showselectedcolor(event) {
+          if (event.target.value.length > 0) {
+          alert(event.target.value);
+        }
+      }
+       let colorselect = document.querySelector("#color")
+       colorselect.addEventListener("change", showselectedcolor);
+      </script>
+  </body>
+</html>
